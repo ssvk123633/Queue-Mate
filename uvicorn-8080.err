@@ -1,0 +1,6 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\SURYA VAMSIKRISHNA\\OneDrive\\Desktop\\GEN pro']
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     Started reloader process [28160] using StatReload
+INFO:     Started server process [28288]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
