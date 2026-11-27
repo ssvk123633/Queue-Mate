@@ -30,11 +30,14 @@ PAGE_BACKGROUNDS = {
     "Host dashboard": "assets/dashboard.jpg",
 }
 
+BASE_DIR = Path(__file__).resolve().parent
+
 def image_data_url(relative_path):
-    path = Path(relative_path)
+    path = BASE_DIR / relative_path
+    if not path.exists():
+        return ""
     image_bytes = path.read_bytes()
     return "data:image/jpeg;base64," + base64.b64encode(image_bytes).decode()
-
 st.markdown("""
 <style>
 .block-container { max-width: 1180px; }
